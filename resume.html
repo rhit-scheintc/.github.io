@@ -8,51 +8,160 @@
         <link rel='stylesheet' href='styles/main.css' />
     </head>
     <body id='about'>
+        <header>
+            <h1>Tristan C. Scheiner</h1>
+        </header>
         <nav>
             <ul>
                 <li><a href='index.html'>About</a></li>
                 <li><a href='portfolio.html'>Portfolio</a></li>
                 <li><a href='resume.html'>Resume</a></li>
+                <hr>
+                <div style='justify-content: center;'>
+                    <button data-location='contactInformation' type='button' class='locationButton'>Contact Info</button>
+                    <button data-location='objective' type='button' class='locationButton'>Objective</button>
+                    <button data-location='education' type='button' class='locationButton'>Education</button>
+                    <button data-location='work' type='button' class='locationButton'>Work Experience</button>
+                    <button data-location='other' type='button' class='locationButton'>Other Experience</button>
+                    <button data-location='skills' type='button' class='locationButton'>Skills</button>
+                    <button data-location='activities' type='button' class='locationButton'>Activities</button>
+                    <button data-location='awards' type='button' class='locationButton'>Awards</button>
+                </div>
             </ul>
         </nav>
         <main>
             <h1>Resume</h1>
             <ul>
+                <div  id='trigger1'></div>
                 <li>
-                    <h2>Technologies</h2>
+                    <h2 id='contactInformation'>Contact Information:</h2>
                     <ul>
                         <li>
-                            <p>Java</p>
+                            <p>Phone Number: +1(773)-849-7398</p>
                         </li>
                         <li>
-                            <p>Python</p>
+                            <p>Email Address: <a href='malito:scheintc@rose-hulman.edu'>scheintc@rose-hulman.edu</a></p>
                         </li>
                         <li>
-                            <p>C</p>
+                            <p>Current Address: 5500 Wabash Avenue, Terre Haute IN 47803, CM 1931	</p>
+                        </li>
+                        <li>
+                            <p>Home Address: 2856 North Burling St, Chicago IL 60657</p>
                         </li>
                     </ul>
                 </li>
+                <hr id='objective'>
+                <div  id='trigger2'></div>
                 <li>
-                    <h2>Work Experience</h2>
+                    <h2 id='objectiveText'>Objective:</h2>
+                    <p>Internship or REU in Computer Science with a preference in Machine Learning</p>
+                </li>
+                <hr id='education'>
+                <div  id='trigger3'></div>
+                <li>
+                    <h2 id='educationText'>Education:</h2>
                     <ul>
                         <li>
-                            <p>2021 Summer Software Developer Internship</p>
+                            <p><span class='degreeName'>B.S. Science Computer Science and Software Engineering</span> May '24, Major GPA: 3.61</p>
+                        </li>
+                        <li>
+                            <p>Saint Ignatius College Prep, Chicago, IL GPA: 3.6</p>
                         </li>
                     </ul>
                 </li>
+                <hr id='work'>
+                <div  id='trigger4'></div>
                 <li>
-                    <h2>Education</h2>
+                    <h2 id='workText'>Work Experience:</h2>
                     <ul>
                         <li>
-                            <p><span class='degreeName'>.S. Science Computer Science and Software Engineering</span> May '24, Major GPA: 3.61</p>
+                            <p><span class='importantText'>Software Developer Internship with Magyk</span> Year: Summer 2021</p>
+                        </li>
+                    </ul>
+                </li>
+                <hr id='other'>
+                <div id='trigger5'></div>
+                <li>
+                    <h2 id='otherExperienceText'>Other Experience:</h2>
+                    <ul>
+                        <li>
+                            <p>Personal ML projects senior year of high school</p>
+                        </li>
+                        <li>
+                            <p>Program assistant at emagination tech camp</p>
+                        </li>
+                        <li>
+                            <p>Assistant for middle school robotics team</p>
+                        </li>
+                        <li>
+                            <p>Teaching assistant for high school summer programming class</p>
+                        </li>
+                    </ul>
+                </li>
+                <hr id='skills'>
+                <div id='trigger6'></div>
+                <li>
+                    <h2 id='skillsText'>Skills:</h2>
+                    <ul>
+                        <li>
+                            <p>Programming: Java, Python, Javascript, C</p>
+                        </li>
+                        <li>
+                            <p>Sub-Skills: Leadership, Organization, Time Management</p>
+                        </li>
+                    </ul>
+                </li>
+                <hr id='activities'>
+                <div  id='trigger7'></div>
+                <li>
+                    <h2 id='activitiesText'>Activities:</h2>
+                    <ul>
+                        <li>
+                            <p><span class='importantText'>MATE Robotics</span> Year: 2021-2022</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>Coding Club</span> Year: 2019-2020</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>High School Cross Country Team</span> Year: Fall 2019</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>emagination Tech Summer Camp</span> Year: 2015-2019</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>High School Track Team</span> Year: Spring 2019</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>Teacher Assistant in Summer School Programming Class</span> Year: Summer 2018</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>FRC Robotcs</span> Year: 2016-2018</p>
+                        </li>
+                    </ul>
+                </li>
+                <hr id='awards'>
+                <div  id='trigger8'></div>
+                <li>
+                    <h2 id='awardsText'>Awards:</h2>
+                    <ul>
+                        <li>
+                            <p><span class='importantText'>Athanasius Kircher, S.J. Computer Science Award</span> Year: 2020</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>Honors High School Diploma</span> Year: 2020</p>
+                        </li>
+                        <li>
+                            <p><span class='importantText'>National Honors Society</span> Year: Spring 2019</p>
                         </li>
                     </ul>
                 </li>
             </ul>
         </main>
         <footer>
-            Placeholder footer
         </footer>
-        <script href='scripts/main.js'></script>
+        <script type="text/javascript" src="scripts/ScrollMagic-master/assets/js/lib/gsap3/gsap.min.js"></script>
+	    <script type="text/javascript" src="scripts/ScrollMagic-master/scrollmagic/minified/ScrollMagic.min.js"></script>
+	    <script type="text/javascript" src="scripts/ScrollMagic-master/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+        <script src='scripts/main.js'></script>
     </body>
 </html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+
+    --light-color: #F2CEA2;
+    --dark-color: #025959;
+    --body-color: #d3d3d3;
+    --heading-color: #037F8C;
+    --contrast-color: #F24949;
+}
+
+html {  
+    scroll-behavior: smooth;  
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "main main"
+                         "foot foot";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    font-family: 'Roboto', sans-serif;
+    background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+    color: var(--body-color);
+}
+
+.degreeName {
+    font-weight: bold;
+    color: var(--contrast-color);
+}
+
+.importantText{
+    color: var(--contrast-color);
+}
+
+@media screen and (min-width: 25em) {
+    body {
+        grid-template-areas: "head head"
+                             "nav main"
+                             "foot foot";
+        grid-template-rows: auto 1fr auto;
+    }
+    
+}
+
+body > * {
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+}
+
+body > header {
+    grid-area: head;
+}
+
+body > nav {
+    grid-area: nav;
+}
+
+body > nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body > main {
+    grid-area: main;
+}
+
+body > footer {
+    grid-area: foot;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: 'Stick No Bills', sans-serif;
+    color: var(--heading-color);
+}
+
+main {
+    background-color: rgba(100, 100, 100, .3);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    background-color: rgba(100, 100, 100, .3);
+    border-bottom: 2px solid black;
+}
+
+header {
+    background-color: rgba(100, 100, 100, .3);
+    border-bottom: 2px solid black;
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--dark-color);
+}
+
+a:hover {
+    text-decoration-color: var(--contrast-color);
+    animation-delay: 250ms;
+}
+
+body#about img {
+    height: 15em;
+}
+
+p {
+    max-width: 50em;
+}
+
+header, footer {
+    padding-top: var(--vertical-space);
+    padding-bottom: var(--horizontal-space);
+}
+
+header h1, footer h1 {
+    margin: 0;
+}
+
+body#portfolio ul#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 25em) {
+    body#portfolio ul#portfolioItems {
+        flex-basis: 48%;
+        padding-right: 25;
+    }
+}
+
+body#portfolio ul#portfolioItems li{
+    flex-basis: 48%;
+    padding-right: 25;
+}
+
+body#portfolio ul#portfolioItems li img{
+    max-width: 100%;
+}
+
+button, .locationButton {
+    width: 12rem;
+    height: 2rem;
+    margin: .25rem auto;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    font-weight: bold;
+    color: white;
+}
+
+button, .locationButton:hover {
+    background-color: var(--contrast-color);
+    transition-duration: 250ms;
+}
